@@ -1,6 +1,10 @@
-def turnstringtolower(word):
-  word = word.lower()
-  print(word)
+print("Enter a number:")
+number1 = input()
+print("Enter a second number:")
+number2 = input()
 
+def addnumbers(number1, number2):
+  print("The sum is: ")  
+  print(int(number1) + int(number2))
 
-turnstringtolower("MOUSE")
+addnumbers(number1, number2)
