@@ -4,7 +4,7 @@
 
 test_string = "hello you"
 
-def findFirstandLast(string: str):
+def first_and_last(string: str):
   return string[0], string[-1]
 
-print(findFirstandLast(test_string))
+print(first_and_last(test_string))
