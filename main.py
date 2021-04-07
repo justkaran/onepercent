@@ -1,23 +1,13 @@
-#Create a program that finds out how many times the letter ‘e’ is said in the text and then displays it as a percentage of all the letters.
+# create a program that can read in different words and then find which word has the most vowels. Write the output of this code to see how many times a certain letter appears in all the words
 
-string = "hello"
+words = "hello, how are you?"
 
+words = words.split(" ")
 
-def countchars(string):
-    num_letters= 0
-    for letters in string:
-      num_letters = num_letters + 1
-    return num_letters
-
-print(countchars(string), "Chars in total")
-
-def countvowels(string):
+for word in words:
     num_vowels=0
-    for letters in string:
-        if letters in "eE":
-          num_vowels = num_vowels+1
-    return num_vowels
-print(countvowels(string), "Vowel/s")
+    for char in word:
+        if char in "aeiouAEIOU":
+           num_vowels = num_vowels+1
+    print (num_vowels)
 
-
-print(countvowels(string)/countchars(string)*100, "Percent vowels compared to total chars")
