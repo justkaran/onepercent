@@ -1,3 +1,5 @@
+# Create a program that finds out how many times the letter ‘e’ is said in the text and then displays it as a percentage of all the letters.
+
 string = "hello"
 
 
