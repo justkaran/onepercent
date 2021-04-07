@@ -8,6 +8,6 @@ def count_vowels(string):
     for char in string:
         if char in "aeiou":
            num_vowels += 1
-    return num_vowels
+    return f"{(num_vowels / len(string)) * 100}%"
 
 print(count_vowels(test_string))
