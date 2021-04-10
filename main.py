@@ -1,9 +1,16 @@
-# create a program that takes input text and outputs any words with three or more consonants.
+# create a program that outputs the number of vowels in a sentence
 
-inputText = input()
-inputText = inputText.lower()
+# Takes input text
+str="Please enter a string as you wish"
+
+def countvowels(str):
+    num_vowels=0
+    for char in str:
+        if char in "aeiouAEIOU":
+           num_vowels = num_vowels+1
+    return num_vowels
+
+print(countvowels(str))
 
 
-for char in inputText:
-  if char not in "aoie":
-    print(char)
+     
