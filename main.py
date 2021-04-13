@@ -1,25 +1,42 @@
-import math
-print(math.pi)
-
-#The formular to calculate the surface area of a sphere is 4 timed pi * r^2. 
-
-# Lets say the radius of sphere is 6.371 km, then the surface area is 6.371 ° 2 * 4 * (math.pi)
-surfaceRaw = 6371000 ** 2 * 4 * (math.pi)
-landRaw = surfaceRaw * 0.29
-habitatRaw = landRaw * 0.57
-habitatRawSinAgriculture = habitatRaw * 0.23
-perPerson = round((habitatRawSinAgriculture / 7800000000))
+# import the time module
+import time
 
 
-surface = round((6371 ** 2 * 4 * (math.pi))/1000000)
-land = round(surface * 0.29)
-habitat = round(land * 0.57)
+# define the countdown func.
+def countdown(t):
+	
+	while t:
+		mins, secs = divmod(t, 60)
+		timer = '{:02d}'.format(secs)
+		print(timer, end="\r")
+		time.sleep(1)
+		t -= 1
+	print('Lift off!!')
 
 
-print("Die Fläche der Erde beträgt",  surface, "millionen Quadratkilometer.")
+# Lets prepare the flight to the Moon 
+print("Lets prepare your flight")
+# input payload in tons
+p = input("What is the payload?")
+#p = 63000
+# input liquid oxygen for first stage
+lo1 = input("How many gallons of liquid oxygen are you using for the first stage?")
+#lo1 = 39000
+# input liquid oxygen for first stage
+k1 = input("How many gallons of kerosene are you using for the first stage?")
+#k1 = 25000
+# input liquid oxygen for second stage
+lo2 = input("How many gallons of liquid oxygen are you using for the first stage?")
+#lo2 = 7300
+# input liquid oxygen for first stage
+k2 = input("How many gallons of kerosene are you using for the first stage?")
+#k2 = 4600
 
-print("Land beträgt", land,  "millionen Quadratkilometer.")
 
-print("Bewohnbares Land beträgt", habitat,  "millionen Quadratkilometer.")
+# input time in seconds10
+t = input("Lift in t minus seconds: ")
+#t = 10
 
-print("Das bedeutet", perPerson, "Quadratmeter pro Person")
+# function call
+countdown(int(t))
+

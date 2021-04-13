@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "knowledgeableleadingpolygons"
+version = "0.1.0"
+description = ""
+authors = ["justkaran <<>>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+gtts = "^2.2.2"
+pygame = "^2.0.1"
+pyttsx3 = "^2.90"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
