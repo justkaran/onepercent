@@ -2,14 +2,9 @@
 # parameter and return a tuple with the first letter and 
 # the last letter.
 
-word = "hello you"
+test_string = "hello you"
 
-def findFirstandLast(word):
-  word = word.lower()
-  s = ""
-  for letter in word:
-     s += letter
-  print(s[0])
-  print(s[-1])
+def first_and_last(string: str):
+  return string[0], string[-1]
 
-findFirstandLast(word)
+print(first_and_last(test_string))
